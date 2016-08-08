@@ -1,0 +1,26 @@
+package com.example
+
+
+object Hello extends Ap{
+  def main(args: Array[String]): Unit = {
+    testFileClassImport()
+    stuffWithBigInteger()
+  }
+
+  def testFileClassImport() = {
+  }
+
+  def stuffWithBigInteger() = {
+    import java.math.BigInteger.{
+      ONE => _,
+      TEN,
+      ZERO => JAVA_ZERO
+    }
+
+    // println(ONE)
+    println(TEN)
+    println(JAVA_ZERO)
+
+  }
+
+}
