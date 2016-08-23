@@ -1,3 +1,6 @@
+/***
+트레이트로 확장되는 정수형 큐 예제
+***/
 //정수형 큐의 추상화 클래스
 abstract class IntQueue {
   def get() : Int
