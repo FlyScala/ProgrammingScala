@@ -1,27 +1,32 @@
-/* 단순 참조
- */
+/* 단순 참조 */
 //val name = "Buck Trends"
-//println(s"Hello, $name")
+//println(s"Hello, ${name}")
 
-//val number = 3.14
+
+val number = 3.14
+/*중괄호 없이, 숫자->문자*/
 //println(s"Hello, $number")
 
+/* $표시 */
 //println("$") // $출력
-println(s"$")  // s를 붙이면 $는 인터폴레이선 처리를 위해 에러가 발생
+//println(s"$")  // s를 붙이면 $는 인터폴레이선 처리를 위해 에러가 발생
 //println(s"$$")  // $를 사용하기 위해서는 $$를 사용해야한다.
 //println(f"$$")  // $를 사용하기 위해서는 $$를 사용해야한다.
 
 /* s 와 f의 차이 */
-println(s"$number%.4f")
-// 자바 println 의 인터폴레이션만 처리.
+//println(s"$number%.4f")
+/*
+   s로 하게 되면 인터폴레이션만 처리
+   f로 하게되면 포맷터 사용
+*/
 
+/*
+  printf 형식화를 위해 자바의 Formatter를 사용.
+ */
 //println(f"$number%.4f")
-// printf 형식화를 위해 자바의 Formatter를 사용.
 //printf(f"$number%.4f\n") // printf로도 사용가능
 
-
-
-//val fNum = f"$number%.4f"
+//val fNum = f"$number%.4f" //String 타입으로 저장
 //println(s"==> $fNum")
 
 
