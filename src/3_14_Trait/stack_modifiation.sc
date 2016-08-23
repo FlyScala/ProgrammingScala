@@ -65,6 +65,6 @@ val q4 =(new BasicIntQueue with Incrementing with Doubling with Filtering)
 q4.put(-10) //필터링
 q4.put(0)  // 필터링 -> 더블링:0 -> 1증가:1 -> 큐삽입
 q4.put(10) // 필터링 -> 더블링:20 -> 1증가:21 -> 큐삽입
-q4.get()
-q4.get()
-q4.get()
+q4.get() // 1
+q4.get() // 21
+q4.get() // 에러~ -10 필터링됨.
